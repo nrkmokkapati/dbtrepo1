@@ -1,1 +1,45 @@
-This is a git repo for to experiment and explore new features of DBT
+# Learning dbt
+
+This repository is a sandbox for experimenting with and exploring dbt features.
+
+## What is dbt?
+
+dbt (data build tool) enables analytics engineers to transform data in a warehouse using SQL and software-engineering best practices.
+
+## Learning objectives
+
+- Define, build, and test models
+- Reuse SQL with Jinja, macros, and packages
+- Document datasets and track lineage
+- Manage environments and deployments
+- Follow a collaborative Git workflow
+
+## Repository workflow
+
+1. Create or edit a model in `models/`.
+2. Run `dbt build` to execute and test project resources.
+3. Use `dbt docs generate` to build documentation.
+4. Run `dbt docs serve` to explore model documentation and lineage.
+5. Commit well-tested changes in small, focused pull requests.
+
+## Useful commands
+
+```bash
+dbt debug
+dbt run
+dbt test
+dbt build
+dbt docs generate
+dbt docs serve
+```
+
+## Suggested experiments
+
+- [ ] Add a staging model
+- [ ] Create a reusable Jinja macro
+- [ ] Add schema and source tests
+- [ ] Build a simple mart model
+- [ ] Generate project documentation
+- [ ] Add a package dependency
+
+> Learning tip: start small, run tests frequently, and document why each transformation exists—not only what it does.
